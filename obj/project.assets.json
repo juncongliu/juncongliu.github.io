@@ -1,0 +1,278 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7": {
+      "Bridge/17.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Bridge.Min": "17.2.0"
+        }
+      },
+      "Bridge.Core/17.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Bridge.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Bridge.dll": {}
+        }
+      },
+      "Bridge.Min/17.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Bridge.Core": "17.2.0"
+        },
+        "build": {
+          "build/Bridge.Min.targets": {}
+        }
+      },
+      "MonoGame.Content.Builder/3.7.0.9": {
+        "type": "package",
+        "build": {
+          "build/MonoGame.Content.Builder.targets": {}
+        }
+      },
+      "Retyped.Core/1.6.6733": {
+        "type": "package",
+        "dependencies": {
+          "Bridge.Core": "17.1.0"
+        },
+        "compile": {
+          "lib/net40/Retyped.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Retyped.Core.dll": {}
+        }
+      },
+      "Retyped.dom/2.8.6733": {
+        "type": "package",
+        "dependencies": {
+          "Retyped.es5": "2.8.6733"
+        },
+        "compile": {
+          "lib/net40/Retyped.dom.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Retyped.dom.dll": {}
+        }
+      },
+      "Retyped.es5/2.8.6733": {
+        "type": "package",
+        "dependencies": {
+          "Retyped.Core": "1.6.6733"
+        },
+        "compile": {
+          "lib/net40/Retyped.es5.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Retyped.es5.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Bridge/17.2.0": {
+      "sha512": "fwkOV8r6o+86aYG/mdEhH+fJxQKpNrn5rFkYzLpJ80aEfaHuGCU3QpMWwjknduv1oHKoBX8SVMyCtz+zrvgKmQ==",
+      "type": "package",
+      "path": "bridge/17.2.0",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "bridge.17.2.0.nupkg.sha512",
+        "bridge.nuspec",
+        "content/bridge.json"
+      ]
+    },
+    "Bridge.Core/17.2.0": {
+      "sha512": "O0OPLfab6bEiI1tLLaqw9A3n4H92OOXsryvTeRynU8E1ckVz4taUo6hYLNGAbZ5xdUgPlfYhZACNhvzseQ7YnA==",
+      "type": "package",
+      "path": "bridge.core/17.2.0",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "bridge.core.17.2.0.nupkg.sha512",
+        "bridge.core.nuspec",
+        "lib/net40/Bridge.dll",
+        "lib/net40/Bridge.xml",
+        "lib/net40/pdb/Bridge.pdb",
+        "tools/install.ps1"
+      ]
+    },
+    "Bridge.Min/17.2.0": {
+      "sha512": "GqF+fiNy/jgXNUkbxowJST8CKTY1qykZnel/LDK4trzX/oPqvaHr0vTMyPwQryzTH3NRe/fDocSTMXZi9Vz8dw==",
+      "type": "package",
+      "path": "bridge.min/17.2.0",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "bridge.min.17.2.0.nupkg.sha512",
+        "bridge.min.nuspec",
+        "build/Bridge.Min.targets",
+        "tools/AjaxMin.dll",
+        "tools/Bridge.Builder.v17.dll",
+        "tools/Bridge.Contract.dll",
+        "tools/Bridge.Translator.dll",
+        "tools/ICSharpCode.NRefactory.CSharp.dll",
+        "tools/ICSharpCode.NRefactory.Cecil.dll",
+        "tools/ICSharpCode.NRefactory.dll",
+        "tools/Microsoft.Build.Framework.dll",
+        "tools/Microsoft.Build.Utilities.Core.dll",
+        "tools/Microsoft.Build.dll",
+        "tools/Microsoft.CodeAnalysis.CSharp.dll",
+        "tools/Microsoft.CodeAnalysis.dll",
+        "tools/Mono.Cecil.Mdb.dll",
+        "tools/Mono.Cecil.Pdb.dll",
+        "tools/Mono.Cecil.Rocks.dll",
+        "tools/Mono.Cecil.dll",
+        "tools/Newtonsoft.Json.dll",
+        "tools/Object.Net.Utilities.dll",
+        "tools/System.AppContext.dll",
+        "tools/System.Collections.Immutable.dll",
+        "tools/System.Composition.AttributedModel.dll",
+        "tools/System.Composition.Convention.dll",
+        "tools/System.Composition.Hosting.dll",
+        "tools/System.Composition.Runtime.dll",
+        "tools/System.Composition.TypedParts.dll",
+        "tools/System.Console.dll",
+        "tools/System.Diagnostics.FileVersionInfo.dll",
+        "tools/System.Diagnostics.StackTrace.dll",
+        "tools/System.IO.Compression.dll",
+        "tools/System.IO.FileSystem.Primitives.dll",
+        "tools/System.IO.FileSystem.dll",
+        "tools/System.Reflection.Metadata.dll",
+        "tools/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "tools/System.Security.Cryptography.Algorithms.dll",
+        "tools/System.Security.Cryptography.Encoding.dll",
+        "tools/System.Security.Cryptography.Primitives.dll",
+        "tools/System.Security.Cryptography.X509Certificates.dll",
+        "tools/System.Text.Encoding.CodePages.dll",
+        "tools/System.Threading.Tasks.Dataflow.dll",
+        "tools/System.Threading.Thread.dll",
+        "tools/System.ValueTuple.dll",
+        "tools/System.Xml.ReaderWriter.dll",
+        "tools/System.Xml.XPath.XDocument.dll",
+        "tools/System.Xml.XPath.dll",
+        "tools/System.Xml.XmlDocument.dll",
+        "tools/TopologicalSorting.dll",
+        "tools/bridge.exe"
+      ]
+    },
+    "MonoGame.Content.Builder/3.7.0.9": {
+      "sha512": "7fUYAAlaryMgD1cC01vvvLpkjvC1TJZYNVeMBiLmRPzXmh6gAROew88Rk6XlyeE4Q1rGRT0OcTfVVVGpopgwew==",
+      "type": "package",
+      "path": "monogame.content.builder/3.7.0.9",
+      "files": [
+        ".signature.p7s",
+        "build/MonoGame.Content.Builder.targets",
+        "monogame.content.builder.3.7.0.9.nupkg.sha512",
+        "monogame.content.builder.nuspec",
+        "tasks/net46/MonoGame.Content.Builder.dll",
+        "tasks/netstandard2.0/MonoGame.Content.Builder.dll"
+      ]
+    },
+    "Retyped.Core/1.6.6733": {
+      "sha512": "LEsu1dvz++8AyzFBULl2n8IJu4q8X//viZnqI6j3Q5vt5HFtKZxPS5+j89/qT+Ygo+KGsVWVT23+lY0e+VvYQQ==",
+      "type": "package",
+      "path": "retyped.core/1.6.6733",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net40/Retyped.Core.dll",
+        "lib/net40/Retyped.Core.xml",
+        "retyped.core.1.6.6733.nupkg.sha512",
+        "retyped.core.nuspec"
+      ]
+    },
+    "Retyped.dom/2.8.6733": {
+      "sha512": "/3Ct3YP9OKKn3tyZAkZ+A79tvPG5tT3MZmSWofkzBr1rF6T7GO0YtApKW9FBxOvejCGIXf83xnopWCgnRjeXkw==",
+      "type": "package",
+      "path": "retyped.dom/2.8.6733",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net40/Retyped.dom.dll",
+        "lib/net40/Retyped.dom.xml",
+        "retyped.dom.2.8.6733.nupkg.sha512",
+        "retyped.dom.nuspec"
+      ]
+    },
+    "Retyped.es5/2.8.6733": {
+      "sha512": "HGIX3s2Xle3VUtIqDuR4y6b9HepzGxoET3evOwtfIxC758IjXvfK+qduQh3YTjq7hhysw5ztycdG3xxbeUvHhQ==",
+      "type": "package",
+      "path": "retyped.es5/2.8.6733",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net40/Retyped.es5.dll",
+        "lib/net40/Retyped.es5.xml",
+        "retyped.es5.2.8.6733.nupkg.sha512",
+        "retyped.es5.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7": [
+      "Bridge >= 17.2.0",
+      "MonoGame.Content.Builder >= 3.7.0.9",
+      "Retyped.dom >= 2.8.6733"
+    ]
+  },
+  "packageFolders": {
+    "/Users/juncongliu/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/juncongliu/Documents/Projects/Github Pages/juncongliu.github.io/MonoGame.WebDemo-master/Platformer2D/Platformer2D.csproj",
+      "projectName": "Platformer2D",
+      "projectPath": "/Users/juncongliu/Documents/Projects/Github Pages/juncongliu.github.io/MonoGame.WebDemo-master/Platformer2D/Platformer2D.csproj",
+      "packagesPath": "/Users/juncongliu/.nuget/packages/",
+      "outputPath": "/Users/juncongliu/Documents/Projects/Github Pages/juncongliu.github.io/MonoGame.WebDemo-master/Platformer2D/obj",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "/Users/juncongliu/.config/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net47"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net47": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net47": {
+        "dependencies": {
+          "MonoGame.Content.Builder": {
+            "target": "Package",
+            "version": "3.7.0.9"
+          },
+          "Retyped.dom": {
+            "target": "Package",
+            "version": "2.8.6733"
+          },
+          "Bridge": {
+            "target": "Package",
+            "version": "17.2.0"
+          }
+        }
+      }
+    }
+  }
+}
